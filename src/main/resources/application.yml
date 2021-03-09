@@ -1,0 +1,17 @@
+server:
+  port: 8083
+spring:
+  devtools:
+    restart:
+      enable: true
+      additional-paths: src/main/java
+      exclude: WEB-INF/**
+    freemarker:
+      cache: false
+  elasticsearch:
+    rest:
+      uris: localhost:9200
+logging:
+  level:
+    root: info
+    net.sw.search: debug
